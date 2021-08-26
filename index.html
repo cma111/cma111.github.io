@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script>
+			function showPos(event, text) {
+			var el, x, y;
+			
+			el = document.getElementById('PopUp');
+			if (window.event) {
+			x = window.event.clientX + document.documentElement.scrollLeft
+			+ document.body.scrollLeft;
+			y = window.event.clientY + document.documentElement.scrollTop +
+			+ document.body.scrollTop;
+			}
+			else {
+			x = event.clientX + window.scrollX;
+			y = event.clientY + window.scrollY;
+			}
+			x -= 2; y -= 2;
+			y = y+15
+			el.style.left = x + "px";
+			el.style.top = y + "px";
+			el.style.display = "block";
+			document.getElementById('PopUpText').innerHTML = text;
+			}
+			</script>
+		<title>IB CAS Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<DIV id='PopUp' style='display: none; position: absolute; left: 100px; top: 50px; border: solid black 1px; padding: 10px; background-color: rgb(200,100,100); text-align: justify; font-size: 12px; width: 135px;' onmouseover="document.getElementById('PopUp').style.display = 'none' ">
+			<SPAN id='PopUpText'>TEXT</SPAN>
+			</DIV>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/earth2.jpg" alt="" /></span>
+						<h1><b>IB CAS Project<b></h1>
+						<b>Welcome to my project! Navigate this website to learn more about the countries of the world!<br /><b>
+						</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About this project</a></li>
+							<li><a href="#first">About the IB Program</li>
+							<li><a href="#second">Reflection and Feedback</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About this project</h2>
+										</header>
+										<p>The world is a fascinating place. With seven different continents, 195 countries, and over seven billion people,
+											 there are endless things to explore. Growing up, I loved learning fun facts and information about different places and cultures,
+											 and I hope that this website will make you excited about learning too!
+											 </p>
+										<ul class="actions">
+											<li><a href="https://www.google.com/maps/d/u/0/edit?mid=1-2D5GmajgAlMZm6dWUfP2GabE3_2wVeR&usp=sharing" class="button">Click here to start!</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/smile.jpg" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- About the IB CAS Program -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>About the International Baccalaureate (IB) Program</h2>
+									<small>The International Baccalaureate Organization was founded by John Goormaghtigh, a Belgian lawyer, in 1968. </small>
+									<small>The program aims to develop "inquiring, knowledgeable, and caring young people who help to create a better and more peaceful world through intercultural understanding and respect."</small>
+									<small> The curriculum, which has since been adopted by high schools around the world, requires students to complete its three components prior to graduation. </small>
+									<small> Learn more about these components below.</small>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="image"><img src="images/ibcircle.jpg" width="275" height="200" alt="" /></span>
+										<h3>The IB Core Curriculum</h3>
+										<small>The IB Core Curriculum requires students to complete six classes - three higher level and three lower level- in the areas of math, science, history, foreign language, english, and art over two years. At the end of those two years, students take cummulative exams testing their accomplishments in the classes. Those scores then go towards earning their IB diploma. </small>
+									</li>
+									<li>
+										<span class="image"><img src="images/ExtendedEssay.jpg" width="185" height="185" alt="" /></span>
+										<h3>The Extended Essay (EE)</h3>
+										<small> The second component of the IB is the Extended Essay, a 4600-word research paper on a topic of the student's choice. The paper is written over the course of two years, and students are assigned a faculty advisor from their chosen academic area to help them with their studies. The paper is graded by IB scorers, and is combined with the 
+											IB exam score to earn the IB diploma. 
+										</small>
+									</li>
+									<li>
+										<span class="image"><img src="images/CAS.jpg" alt="" width="185" height="185" /></span>
+										<h3>Creativity, Activity, Service (CAS)</h3>
+										<p>The third and final component of the IB curriculum is CAS. Students must participate in extracurriculars that fit into one of three categories:
+											creativity, activity, or service, and reflect upon them throughout their two years. Students also choose an ongoing CAS project, which addresses 
+											a specific need or issue within their community. This website is my CAS project.
+										</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://www.ibo.org" class="button">Click to learn more on the IBO's website</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Feedback and Reflection</h2>
+									<p>The most important part of the CAS experience is reflection.<br/> IB encourages students not only to complete their projects, but to learn and grow from
+										them as well.<br /> 
+									Read my project reflection below, and feel free to leave feedback on how to improve the website's features and accessibility.</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>5,120</strong> Etiam
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>8,192</strong> Magna
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>2,048</strong> Tempus
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>4,096</strong> Aliquam
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>1,024</strong> Nullam
+									</li>
+								</ul>
+								<p class="content">
+								<footer class="major">
+									<ul class="actions special">
+									
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Congue imperdiet</h2>
+									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Get Started</a></li>
+										<!DOCTYPE html>
+
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Click here to get started!</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
